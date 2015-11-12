@@ -10,9 +10,7 @@
   <%= @post.description %>
 </p>
 
-<% @comments.each do |comment| %>
-  <div><%= comment.comment_body %></div>
-<% end %>
+<%= render "posts/comments/comment" %>
 
 <%= form_for([@post, @comment]) do |f| %>
   <% if @comment.errors.any? %>
