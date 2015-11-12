@@ -8,12 +8,7 @@
 </head>
 <body>
 
-  <div class="nav">
-    <%= link_to "Home", root_path %>
-    <%= link_to "About", pages_about_path %>
-    <%= link_to "Contact", pages_contact_path %>
-    <%= link_to "Posts", posts_path %>
-  </div>
+  <%= render "shared/navigation" %>
 
 <%= yield %>
 
